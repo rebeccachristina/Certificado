@@ -4,21 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certificado</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        width: 98%;
+        margin: auto;
+      }
+      h1 {
+        margin: 0 auto;
+        font-size: 28px;
+        text-align: center;
+      }
+      #div0 {
+        width: 100%;
+        padding: 10px;
+      }
+      #div1 {
+        text-align: justify;
+        margin-bottom: 25px;
+        padding: 5px;
+      }
+      #div2 {
+        text-align: center;
+        padding: 5px;        
+      }
+    </style>
   </head>
   <body>
     <h1>Certificado de Conclusão</h1>
+    <div id="div0">
+      <div id="div1">
+        <p>
+          Certificamos que {{name}}, inscrit{{gender}} no CPF sob o nº {{cpf}},
+          concluiu com sucesso o curso de {{courseName}}, ministrado por
+          {{collegeName}} no período de {{date}} a {{dateEnd}}, com carga
+          horária de {{numberhour}} horas.
+        </p>
+      </div>
+      <div id="div2">
+        <p>Manaus, {{day}} de {{month}} de {{year}}</p>
 
-    <p>
-      Certificamos que {{name}}, inscrit{{gender}} no CPF sob o nº {{cpf}},
-      concluiu com sucesso o curso de {{courseName}}, ministrado por
-      {{collegeName}} no período de {{date}} a {{dateEnd}}, com carga horária de
-      {{numberhour}} horas.
-    </p>
+        <p>{{signature}}</p>
 
-    <p>Manaus, {{day}} de {{month}} de {{year}}</p>
+        <p>Diretor</p>
 
-    <p>{{signature}}
-       {{collegeName}} 
-       CNPJ nº {{cnpj}}</p>
+        <p>{{collegeName}}</p>
+
+        <p>CNPJ nº {{cnpj}}</p>
+      </div>
+    </div>
   </body>
 </html>
