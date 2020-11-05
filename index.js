@@ -31,4 +31,4 @@ app.post("/certificado", async (request, response) => {
   });
 });
 
-app.listen(processo.env.PORT || 3000);
+app.listen(process.env.PORT || 3000);
