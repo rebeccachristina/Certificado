@@ -13,7 +13,7 @@ app.get("/certificado.html", (require, response) => {
 });
 
 const certificadoPath =
-  "https://firebasestorage.googleapis.com/v0/b/certificado-74d81.appspot.com/o/certificado.html?alt=media&token=888abcf1-c79d-47d7-b2ca-e136e48d72a1";
+"https://firebasestorage.googleapis.com/v0/b/certificado-74d81.appspot.com/o/certificado.html?alt=media&token=be591ecc-3747-4724-a089-8b048b4db69a";
 app.post("/certificado", async (request, response) => {
   const certificText = await fetch(certificadoPath).then((respond) =>
     respond.text()
